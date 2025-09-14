@@ -14,6 +14,7 @@ docker run \
   -d \
   --name hoang-ubuntu-local \
   --hostname hoang-ubuntu-local \
+  -v "$PWD:/work" \
   ubuntu:24.04 \
   tail -f /dev/null
 
